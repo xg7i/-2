@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حل معادلات نيوتن الخطية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #equationInput {
+            margin-bottom: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>حل معادلات نيوتن الخطية</h1>
+    <div id="equationInput">
+        <label for="equation">أدخل المعادلة (مثال: x^2 - 2 = 0):</label><br>
+        <input type="text" id="equation" placeholder="اكتب المعادلة هنا">
+        <button onclick="solveEquation()">حل</button>
+    </div>
+    <div id="result"></div>
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2023 [اسمك]. جميع الحقوق محفوظة.</p>
+        <p>Nova Mod</p>
+    </footer>
+
+    <script>
+        function solveEquation() {
+            const equation = document.getElementById('equation').value;
+            // هنا يمكنك إضافة منطق لحل المعادلة
+            // كمثال بسيط، سأقوم بعرض المعادلة المدخلة فقط
+            document.getElementById('result').innerText = 'نتيجة المعادلة: ' + equation;
+        }
+    </script>
+</body>
+</html>
